@@ -32,7 +32,7 @@ export const PopupForm: React.FC<PopupFormProps> = ({ isOpen, onClose }) => {
       console.log(formData);
       setIsLoading(true);
       try {
-        const response = await fetch('http://localhost:3000/api/referral', {
+        const response = await fetch('https://accredian-backend-w354.onrender.com/api/referral', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
